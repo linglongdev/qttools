@@ -1,0 +1,22 @@
+package:
+  id: qttools
+  kind: lib
+  version: 5.11.3
+
+base:
+  id: org.deepin.base
+  version: 20.5.0
+
+depends:
+- id: qtbase
+  version: 5.11.3.15
+
+source:
+  kind: git
+  url: https://github.com/deepin-community/qttools-opensource-src.git
+  version: v20/5.11.3
+  commit: 20fa360e58fbb8a5906f6ed35987c3e35886144e
+
+  patch: []
+build:
+  kind: qmake
